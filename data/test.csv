@@ -1,0 +1,13 @@
+response,context,label
+"The email was sent on January 8.","The email was sent on January 8.",non-hallucination
+"The email was sent on January 18.","The email was sent on January 8.",hallucination
+"Support lasts 12 months.","The plan includes 12 months of support.",non-hallucination
+"Support lasts 24 months.","The plan includes 12 months of support.",hallucination
+"Two endpoints were added: /users and /teams.","The release adds two endpoints: /users and /teams.",non-hallucination
+"The release added /users, /teams, and /billing.","The release adds two endpoints: /users and /teams.",hallucination
+"It is not specified in the context.","",non-hallucination
+"The CEO approved the change.","",hallucination
+"The experiment used 50 samples.","The experiment used 50 samples in total.",non-hallucination
+"The experiment used 75 samples.","The experiment used 50 samples in total.",hallucination
+"Orders over $40 ship free.","Shipping is free for orders over $40.",non-hallucination
+"All orders ship free.","Shipping is free for orders over $40.",hallucination

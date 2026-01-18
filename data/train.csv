@@ -1,0 +1,31 @@
+response,context,label
+"Refunds are allowed within 30 days of purchase.","The policy allows refunds within 30 days of purchase.",non-hallucination
+"Refunds are allowed within 90 days.","The policy allows refunds within 30 days of purchase.",hallucination
+"It was published in 2012 by North Press.","The book was published in 2012 by North Press.",non-hallucination
+"It was published in 2015 by South Press.","The book was published in 2012 by North Press.",hallucination
+"Uptime was 99.2% last week.","Server uptime last week was 99.2%.",non-hallucination
+"Uptime was 100% last week.","Server uptime last week was 99.2%.",hallucination
+"The kickoff is on March 3.","Project kickoff is on March 3.",non-hallucination
+"The kickoff is on March 5.","Project kickoff is on March 3.",hallucination
+"The logo is blue.","The logo color is blue.",non-hallucination
+"The logo is green.","The logo color is blue.",hallucination
+"Alice leads the team.","Alice is the team lead, Bob is the designer.",non-hallucination
+"Bob is the team lead.","Alice is the team lead, Bob is the designer.",hallucination
+"The dataset has 5 columns.","The dataset has 5 columns and 200 rows.",non-hallucination
+"The dataset has 10 columns.","The dataset has 5 columns and 200 rows.",hallucination
+"It runs on Python 3.11.","The app runs on Python 3.11.",non-hallucination
+"It runs on Python 3.8.","The app runs on Python 3.11.",hallucination
+"Version 2.4 shipped on Friday.","We shipped version 2.4 on Friday.",non-hallucination
+"Version 2.5 shipped on Friday.","We shipped version 2.4 on Friday.",hallucination
+"It requires internet access to sync.","The package requires internet access to sync.",non-hallucination
+"It works offline without sync.","The package requires internet access to sync.",hallucination
+"I do not have enough context to verify that.","",non-hallucination
+"The report states revenue grew by 20%.","",hallucination
+"The guide does not mention a dark mode.","The user guide does not mention a dark mode.",non-hallucination
+"The guide confirms a dark mode.","The user guide does not mention a dark mode.",hallucination
+"The contract ends in June 2025.","The contract ends in June 2025.",non-hallucination
+"The contract ends in June 2024.","The contract ends in June 2025.",hallucination
+"Success returns 201.","The API returns status code 201 on success.",non-hallucination
+"Success returns 200.","The API returns status code 201 on success.",hallucination
+"Managers approve expenses above $500.","Only managers can approve expenses above $500.",non-hallucination
+"Anyone can approve expenses above $500.","Only managers can approve expenses above $500.",hallucination
