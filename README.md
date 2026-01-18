@@ -8,11 +8,12 @@ can run on CPU-only machines.
 ## Quickstart
 
 1. Install dependencies:
-   - `python -m venv .venv`
+   - `python3 -m venv .venv`
    - `source .venv/bin/activate`
    - `pip install -r requirements.txt`
+   - `pip install -e .`
 2. Run evaluation (trains and evaluates on the toy dataset):
-   - `python scripts/evaluate.py`
+   - `python3 scripts/evaluate.py`
 3. Use the CLI:
    - `python -m halludetect.cli --response "Support lasts 12 months." --context "The plan includes 12 months of support." --json`
 
@@ -23,6 +24,13 @@ The project delivers:
 - Evaluation metrics in `reports/metrics.json`.
 - Error analysis in `reports/error_analysis.md`.
 - A CLI interface for ad-hoc detection.
+
+## Latest evaluation results (toy test set)
+
+- Accuracy: 0.58
+- Precision: 0.57
+- Recall: 0.67
+- F1: 0.62
 
 ## Project structure
 
@@ -35,18 +43,18 @@ The project delivers:
 ## Training and evaluation
 
 Train only:
-- `python scripts/train.py --train-path data/train.csv --model-path models/halludetect.joblib`
+- `python3 scripts/train.py --train-path data/train.csv --model-path models/halludetect.joblib`
 
 Train + evaluate:
-- `python scripts/evaluate.py --train-path data/train.csv --test-path data/test.csv`
+- `python3 scripts/evaluate.py --train-path data/train.csv --test-path data/test.csv`
 
 ## CLI usage
 
 Interactive:
-- `python -m halludetect.cli`
+- `python3 -m halludetect.cli`
 
 Heuristic-only mode:
-- `python -m halludetect.cli --response "The report shows 20% growth." --heuristic-only`
+- `python3 -m halludetect.cli --response "The report shows 20% growth." --heuristic-only`
 
 ## LLD learning guide
 
